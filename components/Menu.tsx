@@ -1,0 +1,41 @@
+import { Link } from "react-scroll";
+import { useState } from "react"
+import React from 'react'
+import About from "./About";
+
+interface MenuProps {
+    isMenuOpen: boolean;
+    onCloseMenu: () => void;
+  }
+
+const Menu = ({ isMenuOpen, onCloseMenu }: MenuProps) => {
+
+
+  return (
+    <div className={`fixed top-0 right-0 h-full w-full bg-gray-800 transform ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'} transition-transform ease-in-out duration-300 z-10`}>
+      <h1 className="text-5xl text-amber-200 font-black p-2 m-2">TCE</h1>
+        <nav className="flex flex-col justify-center items-center h-full">
+        
+        <a href="#about" onClick={onCloseMenu} className="cursor-pointer text-white hover:text-amber-200 text-3xl py-4 hover:text-4xl transition duration-300">
+          About
+        </a>
+        <a href="#services" onClick={onCloseMenu} className="text-white hover:text-amber-200 text-3xl py-4 hover:text-4xl transition duration-300">Services</a>
+        <a href="#portfolio" onClick={onCloseMenu} className="text-white hover:text-amber-200 text-3xl py-4 hover:text-4xl transition duration-300">Portfolio</a>
+        <a href="#testimoials" className="text-white hover:text-amber-200 text-3xl py-4 hover:text-4xl transition duration-300">Testimonials</a>
+        <a href="#contact" onClick={onCloseMenu} className="text-white hover:text-amber-200 text-3xl py-4 hover:text-4xl transition duration-300">Contact us</a>
+        {isMenuOpen && (
+          <button
+            onClick={onCloseMenu}
+            className="text-white text-3xl py-2 mt-4 hover:text-black hover:bg-amber-200 hover:p-4 hover:rounded-full  transition duration-300"
+          >
+            x
+          </button>
+        )}
+
+      </nav>
+
+    </div>
+  )
+}
+
+export default Menu
