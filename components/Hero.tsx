@@ -6,11 +6,12 @@ import { useTypewriter, Cursor } from 'react-simple-typewriter';
 import 'react-simple-typewriter/dist/index'
 import { useState } from 'react';
 import Link from 'next/link';
-
 import Menu from './Menu';
+import LoadingScreen from './LoadingPage';
 
 const Hero = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [loadingComplete, setLoadingComplete] = useState(false);
 
     const toggleMenu = (e: any) => {
       e.preventDefault();
@@ -21,16 +22,28 @@ const Hero = () => {
       setIsMenuOpen(false);
     };
 
+    
+
+    const handleLoadComplete = () => {
+      setLoadingComplete(true);
+    };
+
   return (
-    <section
+    <div>
+      {!loadingComplete ? (
+        <LoadingScreen onLoad={handleLoadComplete} />
+      ) : (
+        <section
       id='home'
       className='relative h-screen bg-opacity-30 bg-cover bg-center text-white'
       style={{
         backgroundImage: `url(${herobg.src})`, // Replace 'your-image.jpg' with your actual image path
       }}
     >
-      <nav className="flex justify-between items-center p-6 ">
-      <h1 className="text-5xl font-bold ">Third Column</h1>
+            
+        
+      <nav className="flex justify-between items-center p-6 bg-black text-white ">
+      <h1 className="text-5xl font-bold">3rd Column</h1>
       <div className="cursor-pointer" onClick={toggleMenu}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -58,6 +71,10 @@ const Hero = () => {
        </div>
         <Menu isMenuOpen={isMenuOpen} onCloseMenu={handleCloseMenu}/>
     </section>
+      )}
+
+    </div>
+    
   )
 }
 

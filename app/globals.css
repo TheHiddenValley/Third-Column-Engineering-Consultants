@@ -8,3 +8,47 @@
   --background-end-rgb: 255, 255, 255;
 }
 
+@keyframes fade-in {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animation-opacity {
+  animation-duration: 2s;
+  animation-fill-mode:forwards;
+}
+
+.animation-opacity-show {
+  animation-name: fade-out;
+}
+
+.animation-opacity-hide {
+  animation-name: fade-in;
+}
+
+/* Replace with your actual CSS selector for the horizontal scroll container */
+.overflow-x-auto::-webkit-scrollbar {
+  width: 10px; /* Width of the vertical scrollbar */
+}
+
+/* Track */
+.overflow-x-auto::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Background color of the track */
+}
+
+/* Handle */
+
+
