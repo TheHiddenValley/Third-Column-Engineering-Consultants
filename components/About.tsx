@@ -4,20 +4,11 @@ import { SocialIcon } from "react-social-icons"
 
 const About = () => {
   return (
-    // <section id='about' className='h-screen bg-amber-100 p-6 '>
-    //     <h1 className='flex text-5xl justify-center font-black'>About</h1>
-    //     <p className='text-center pt-5 px-10 font-montserrat'>3rd Column Engineering Consultants is an Architectural & Engineering practice based in Dubai, the commercial capital of the Middle East. We are an integrated, single source design firm with shared experience and expertise of a bunch of creative designers, logical thinkers and dedicated professionals. We offer Architectural, Engineering and Urban Planning services to a diverse base of national & international clients. We offer to our client a diverse range of services integrating skills from many operating systems to provide highly innovative solutions. Our quest for quality is inherent in our structure being carried through the detailed design, construction and post completion phases. Our objectives are, with the other members of the design team, to provide our clients with exceptional buildings and habitable environment promoting a sustainable development to meet the demands of the market within the constraints of our Clients budgets.</p>
-    //     <h1 className='pt-4 flex text-3xl justify-center font-bold'>Founders</h1>
-        
-    //     <div className='flex'>
-            
-    //     </div>
-    // </section>
-    <section id="about" className='bg-slate-200 h-100'>
+
+    <section id="about" className='bg-slate-100 h-100'>
     <div className="pb-12 md:pt-6 md:pb-40">
-      <h1 className="text-center font-bold text-4xl sm:pt-4 text-gray-800">
-        About Us
-        <hr className="w-20 h-1 mx-auto my-4 bg-gray-800 border-0 rounded"></hr>
+      <h1 className="text-center text-orange-500 font-bold text-4xl sm:pt-6 ">
+        ABOUT US
       </h1>
 
       <div className="flex flex-col space-y-10 items-stretch justify-center align-top md:space-x-7 md:space-y-0 md:flex-row md:text-left">

@@ -1,7 +1,4 @@
-import { Link } from "react-scroll";
-import { useState } from "react"
 import React from 'react'
-import About from "./About";
 
 interface MenuProps {
     isMenuOpen: boolean;
@@ -21,7 +18,7 @@ const Menu = ({ isMenuOpen, onCloseMenu }: MenuProps) => {
         </a>
         <a href="#services" onClick={onCloseMenu} className="text-white hover:text-amber-200 text-3xl py-4 hover:text-4xl transition duration-300">Services</a>
         <a href="#portfolio" onClick={onCloseMenu} className="text-white hover:text-amber-200 text-3xl py-4 hover:text-4xl transition duration-300">Portfolio</a>
-        <a href="#testimoials" className="text-white hover:text-amber-200 text-3xl py-4 hover:text-4xl transition duration-300">Testimonials</a>
+        <a href="#testimonials" onClick={onCloseMenu}className="text-white hover:text-amber-200 text-3xl py-4 hover:text-4xl transition duration-300">Testimonials</a>
         <a href="#contact" onClick={onCloseMenu} className="text-white hover:text-amber-200 text-3xl py-4 hover:text-4xl transition duration-300">Contact us</a>
         {isMenuOpen && (
           <button
