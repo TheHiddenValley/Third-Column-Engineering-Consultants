@@ -15,8 +15,8 @@ const ImageCarousel = () => {
         <div key={index}>
          
           <img className='opacity-150 h-screen' src={image.src} alt={`Slide ${index}`} />
-          <div className="absolute inset-0 flex justify-center items-center">
-            <p className="text-white text-center bg-black p-2 text-5xl">
+          <div className="absolute inset-0 flex justify-center items-center  bg-black bg-opacity-50 h-screen w-full">
+            <p className="flex justify-center align-middle text-white p-2 text-5xl">
               {image.caption}
             </p>
           </div>

@@ -16,8 +16,8 @@ const ContactUs = () => {
       </div>
       <div className="flex-1 bg-darkgray p-8">
         <h3 className="text-xl md:text-2xl text-white mb-4">Send Us a Message</h3>
-        <form className="space-y-4">
-          <div className="flex flex-col md:flex-row md:space-x-4">
+        <form className="space-y-4 sm:space-y-2">
+          <div className="flex flex-col md:flex-row md:space-x-4 ">
             <input placeholder='Name' type="text" id="name" name="name" className="w-full md:w-1/2 bg-gray-800 p-2 rounded-md text-white" />
             <input placeholder='Phone' type="tel" id="phone" name="phone" className="w-full md:w-1/2 bg-gray-800 p-2 rounded-md text-white" />
           </div>

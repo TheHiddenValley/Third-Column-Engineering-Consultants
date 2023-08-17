@@ -14,6 +14,7 @@ module.exports = {
       },
       fontFamily: {
         montserrat: ['Montserrat', 'sans-serif'],
+        lexend: ['Lexend', 'sans'],
       },
     },
   },

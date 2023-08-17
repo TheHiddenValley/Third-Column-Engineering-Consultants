@@ -7,7 +7,7 @@ const About = () => {
 
     <section id="about" className='bg-slate-100 h-100'>
     <div className="pb-12 md:pt-6 md:pb-40">
-      <h1 className="text-center text-orange-500 font-bold text-4xl sm:pt-6 ">
+      <h1 className="text-5xl font-bold p-2 text-gray-800 text-center sm:pt-6 ">
         ABOUT US
       </h1>
 
