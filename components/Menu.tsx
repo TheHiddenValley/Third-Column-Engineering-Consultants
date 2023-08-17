@@ -16,9 +16,9 @@ const Menu = ({ isMenuOpen, onCloseMenu }: MenuProps) => {
         <a href="#about" onClick={onCloseMenu} className="cursor-pointer text-white hover:text-amber-200 text-3xl py-4 hover:text-4xl transition duration-300">
           About
         </a>
-        <a href="#services" onClick={onCloseMenu} className="text-white hover:text-amber-200 text-3xl py-4 hover:text-4xl transition duration-300">Services</a>
         <a href="#portfolio" onClick={onCloseMenu} className="text-white hover:text-amber-200 text-3xl py-4 hover:text-4xl transition duration-300">Portfolio</a>
         <a href="#testimonials" onClick={onCloseMenu}className="text-white hover:text-amber-200 text-3xl py-4 hover:text-4xl transition duration-300">Testimonials</a>
+        <a href="#team" onClick={onCloseMenu} className="text-white hover:text-amber-200 text-3xl py-4 hover:text-4xl transition duration-300">Our Team</a>
         <a href="#contact" onClick={onCloseMenu} className="text-white hover:text-amber-200 text-3xl py-4 hover:text-4xl transition duration-300">Contact us</a>
         {isMenuOpen && (
           <button

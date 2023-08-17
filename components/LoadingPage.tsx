@@ -16,17 +16,16 @@ const LoadingScreen = ({ onLoad }: LoadingScreenProps) => {
 
   return (
     <div
-      className={`fixed bottom-0 inset-x-0 flex justify-center items-center transition-transform duration-500 h-screen ${
+      className={`fixed p-10 flex flex-col justify-center z-50 text-center align-middle transition-transform duration-500 h-screen ${
         showLoading ? 'transform translate-y-0' : 'transform translate-y-full'
       }`}
       style={{ background: 'black', color: 'white' }}
     >
-    <hr className='text-white'/>
+    
       <p className="text-center text-6xl font-semibold">
-        "We borrow from nature, the space upon which we build"
+        "We borrow from nature, the space  ....upon which we build"
       </p>
-      <p className='text-center text-amber-200'>-Tadao Ando</p>
-      <hr className='text-white'/>
+      <p className='text-center text-amber-200 text-5xl pt-4'>-Tadao Ando</p>
     </div>
   );
 };
