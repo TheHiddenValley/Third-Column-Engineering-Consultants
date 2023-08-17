@@ -7,7 +7,7 @@ const About = () => {
 
     <section id="about" className='bg-slate-100 h-100'>
     <div className="pb-12 md:pt-6 md:pb-40">
-      <h1 className="text-5xl font-bold p-2 text-gray-800 text-center sm:pt-6 ">
+      <h1 className="text-3xl font-light p-2 text-gray-800 text-center font-helvetica-neue tracking-wider sm:pt-6 ">
         ABOUT US
       </h1>
 
@@ -18,21 +18,13 @@ const About = () => {
           
           <p className="text-center text-lg text-gray-800 sm:p-5">
           3rd Column Engineering Consultants is an Architectural & Engineering practice based in Dubai, the commercial capital of the Middle East. We are an integrated, single source design firm with shared experience and expertise of a bunch of creative designers, logical thinkers and dedicated professionals. We offer Architectural, Engineering and Urban Planning services to a diverse base of national & international clients. We offer to our client a diverse range of services integrating skills from many operating systems to provide highly innovative solutions. Our quest for quality is inherent in our structure being carried through the detailed design, construction and post completion phases. Our objectives are, with the other members of the design team, to provide our clients with exceptional buildings and habitable environment promoting a sustainable development to meet the demands of the market within the constraints of our Clients budgets.
-          {/* Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos totam omnis tempore exercitationem voluptate facere illo, quos maxime nulla incidunt repellendus amet, ea accusantium necessitatibus alias numquam culpa. Veritatis, soluta. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis laborum, quasi provident in necessitatibus quibusdam enim sequi similique, sunt reiciendis inventore nemo, aliquam reprehenderit dolorem laudantium incidunt pariatur officiis. Voluptates. */}
           </p>
-
         </div>
-        {/* <div className="left-1/2 -ml-0.5 w-3 h-25 bg-purple-600 rounded-md"></div>
-        <div className="left-1/2 -ml-0.5 w-2.5 h-20 bg-purple-600 rounded-md"></div>
-        <div className="left-1/2 -ml-0.5 w-2 h-10 bg-purple-600 rounded-md"></div>
-      <div className="left-1/2 -ml-0.5 w-1.5 h-5 bg-purple-600 rounded-md"></div> */}
-        
-      
       </div>
       <div>
         
       </div>
-      <h1 className='text-center p-3 text-4xl font-black tracking-wider '>FOUNDERS</h1>
+      <h1 className='text-center p-3 text-3xl font-light font-helvetica-neue tracking-wider '>FOUNDERS</h1>
       <div className='flex justify-center space-between space-x-10 p-1'>
         <div className='bg-gray-800 p-5 hover:rounded-xl hover:opacity-95 hover:scale-105 transition-all'>
             <Image className='rounded-lg shadow-2xl mt-2 ' src='/founder1.jpeg' alt='' width={175} height={175}/>

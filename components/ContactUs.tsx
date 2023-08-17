@@ -4,7 +4,7 @@ const ContactUs = () => {
   return (
     <section id="contact" className="bg-black p-8 h-3/4 flex flex-col md:flex-row">
       <div className="flex-1 md:p-8">
-        <h2 className="text-5xl md:text-7xl text-orange-400 font-bold mb-4">Contact Us</h2>
+        <h2 className="text-3xl text-orange-400 font-light mb-4 font-helvetica-neue tracking-wider">CONTACT US</h2>
         <div className='pt-6'>
           <p className="text-base md:text-lg text-white">3rd Column Engineering Consultants</p>
           <p className="text-base md:text-lg text-white">P.O.Box 114093, Dubai</p>

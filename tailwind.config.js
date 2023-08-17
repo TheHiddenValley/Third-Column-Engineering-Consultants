@@ -15,6 +15,12 @@ module.exports = {
       fontFamily: {
         montserrat: ['Montserrat', 'sans-serif'],
         lexend: ['Lexend', 'sans'],
+        fontFamily: {
+          'helvetica-neue': ['Helvetica Neue', 'sans-serif'],
+        },
+        letterSpacing: {
+          wide: '0.15em',
+        },
       },
     },
   },

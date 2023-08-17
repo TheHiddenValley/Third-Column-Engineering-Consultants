@@ -33,7 +33,7 @@ const TestimonialsPage = () => {
 
   return (
     <section id="testimonials" className="p-8 flex flex-col items-center justify-center min-h-screen bg-gray-100">
-      <h2 className="text-5xl font-bold p-2 text-gray-800">Testimonials</h2>
+      <h2 className="text-3xl font-light p-2 text-gray-800 font-helvetica-neue tracking-wider">TESTIMONIALS</h2>
       <p className='opacity-60'>What our clients have to say</p>
       <div className="flex items-center mb-4 relative md:flex-row">
         <div className="flex-grow max-w-[95vw] overflow-hidden space-x-10 scrollbar-hide mb-10 scroll-smooth px-24">
