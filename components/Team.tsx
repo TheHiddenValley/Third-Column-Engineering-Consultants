@@ -1,11 +1,12 @@
 import React from 'react'
 import Member from './Member';
+import { SocialIcon } from "react-social-icons"
 
 const members = [
     {
         name: 'Person1',
         image: '/founder1.jpeg', 
-        post: 'Founder'
+        post: 'Founder',
       },
       {
         name: 'Person1',
