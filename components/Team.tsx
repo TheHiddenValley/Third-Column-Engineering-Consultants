@@ -7,33 +7,38 @@ const members = [
         name: 'Person1',
         image: '/founder1.jpeg', 
         post: 'Founder',
+        linkedin: 'https://www.linkedin.com/in/jayadev-edakkandy-7a67951b/',
       },
       {
         name: 'Person1',
         image: '/founder1.jpeg', 
-        post: 'Founder'
+        post: 'Founder',
+        linkedin: 'https://www.linkedin.com/in/jayadev-edakkandy-7a67951b/',
       },
       {
         name: 'Person1',
         image: '/founder1.jpeg', 
-        post: 'Founder'
+        post: 'Founder',
+        linkedin: 'https://www.linkedin.com/in/jayadev-edakkandy-7a67951b/',
       },
       {
         name: 'Person1',
         image: '/founder1.jpeg', 
-        post: 'Founder'
+        post: 'Founder',
+        linkedin: 'https://www.linkedin.com/in/jayadev-edakkandy-7a67951b/',
       },
       {
         name: 'Person1',
         image: '/founder1.jpeg', 
-        post: 'Founder'
+        post: 'Founder',
+        linkedin: 'https://www.linkedin.com/in/jayadev-edakkandy-7a67951b/',
       },
       
 ];
 
 const Team = () => {
   return (
-    <section id="team" className="bg-gray-100 h-100 pb-6">
+    <section id="team" className="bg-gray-200 h-100 pb-6">
       <h1 className="text-center text-3xl font-helvetica-neue tracking-wider font-light py-4 text-gray-800">
         THE TEAM
       </h1>
@@ -45,6 +50,7 @@ const Team = () => {
             name={member.name}
             image={member.image}
             post={member.post}
+            linkedin={member.linkedin}
           />
         ))}
       </div>

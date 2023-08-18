@@ -1,6 +1,8 @@
 import React from 'react';
 
 const ContactUs = () => {
+    // add google sheets integration
+
   return (
     <section id="contact" className="bg-black p-8 h-3/4 flex flex-col md:flex-row">
       <div className="flex-1 md:p-8">
