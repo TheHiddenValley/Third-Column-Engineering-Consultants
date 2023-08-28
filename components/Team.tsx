@@ -21,18 +21,6 @@ const members = [
         post: 'Founder',
         linkedin: 'https://www.linkedin.com/in/jayadev-edakkandy-7a67951b/',
       },
-      {
-        name: 'Person1',
-        image: '/founder1.jpeg', 
-        post: 'Founder',
-        linkedin: 'https://www.linkedin.com/in/jayadev-edakkandy-7a67951b/',
-      },
-      {
-        name: 'Person1',
-        image: '/founder1.jpeg', 
-        post: 'Founder',
-        linkedin: 'https://www.linkedin.com/in/jayadev-edakkandy-7a67951b/',
-      },
       
 ];
 
