@@ -53,7 +53,7 @@ const Hero = () => {
       {!loadingComplete ? (
         <LoadingScreen onLoad={handleLoadComplete} />
       ) : (
-        <section className="relative h-screen ">
+        <section className="relative h-screen">
           <nav className="absolute top-0 left-0 z-10 flex justify-between items-center p-6 w-full bg-opacity-60 text-white bg-black">
             <h1 className="text-5xl font-bold">3rd Column</h1>
             <div className="cursor-pointer" onClick={toggleMenu}>
