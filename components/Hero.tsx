@@ -11,8 +11,8 @@ import Image from 'next/image';
 
 const images = [
   {
-    src: '/hero.png',
-    caption: 'CAPTION ONE, DUBAI',
+    src: '/04-UAQ-01.jpg',
+    caption: 'CAPTION ONE, UMM Al QUWAIN',
   },
   {
     src: '/hero1.png',
@@ -77,7 +77,7 @@ const Hero = () => {
             {images.map((image, index) => (
               <div
                 key={index}
-                className={`absolute h-full w-full transition-opacity duration-1000 ${
+                className={`absolute h-3/4 w-full transition-opacity duration-1000 ${
                   index === currentImageIndex ? 'opacity-90' : 'opacity-0'
                 }`}
               >
@@ -87,9 +87,11 @@ const Hero = () => {
                   layout="fill"
                   objectFit="cover"
                 />
-                <div className="absolute inset-x-0 bottom-0 text-center  h-1/8 w-full ">
+                <div className="absolute inset-x-0 bottom-0 text-center  w-full ">
                   <h1 className=' text-3xl font-helvetica-neue tracking-wider font-semibold p-4 text-white'>{image.caption}</h1>
+                  
                 </div>
+                <p className='text-white'>This is some text below the image.</p>
               </div>
             ))}
           </div>

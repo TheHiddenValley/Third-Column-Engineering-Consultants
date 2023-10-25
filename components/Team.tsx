@@ -4,19 +4,19 @@ import { SocialIcon } from "react-social-icons"
 
 const members = [
     {
-        name: 'Person1',
+        name: 'Gunduz Eronat',
         image: '/founder1.jpeg', 
         post: 'Founder',
-        linkedin: 'https://www.linkedin.com/in/jayadev-edakkandy-7a67951b/',
+        linkedin: 'https://www.linkedin.com/in/gunduz-eronat-15b2a635/',
       },
       {
-        name: 'Person1',
+        name: 'Hari Anandan',
         image: '/founder1.jpeg', 
         post: 'Founder',
-        linkedin: 'https://www.linkedin.com/in/jayadev-edakkandy-7a67951b/',
+        linkedin: 'https://www.linkedin.com/in/hari-anandan-31697516/',
       },
       {
-        name: 'Person1',
+        name: 'Jayadev Edakkandy',
         image: '/founder1.jpeg', 
         post: 'Founder',
         linkedin: 'https://www.linkedin.com/in/jayadev-edakkandy-7a67951b/',
