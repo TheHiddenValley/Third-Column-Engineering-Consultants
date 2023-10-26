@@ -17,7 +17,7 @@ const services = [
 
 const About = () => {
   return (
-    <section id="about" className='bg-slate-100 h-screen sm:p-10'>
+    <section id="about" className='bg-slate-100 h-auto sm:p-10'>
       <div className="pb-12 md:pt-16 md:pb-48">
         <h1 className="text-center text-gray-800 font-helvetica-neue tracking-wider font-light text-3xl">
           ABOUT

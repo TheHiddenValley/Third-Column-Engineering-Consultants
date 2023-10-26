@@ -41,7 +41,7 @@ const TestimonialsPage = () => {
   }, [currentIndex]);
 
   return (
-    <section id="testimonials" className="p-8 flex flex-col items-center justify-center max-h-4/5 bg-orange-600">
+    <section id="testimonials" className="p-6 flex flex-col items-center justify-center bg-orange-600">
       <div className="flex items-center mb-4 relative md:flex-row">
         <button
           onClick={prevTestimonial}
@@ -49,7 +49,7 @@ const TestimonialsPage = () => {
         >
           &lt;
         </button>
-        <div className="max-w-[95vw] text-3xl font-serif p-6 text-white rounded-lg">
+        <div className="max-w-[95vw] text-2xl font-serif p-6 text-white rounded-lg">
           <p>"{currentTestimonial.quote}"</p>
           <p className="text-xl text-right font-thin mt-2">-{currentTestimonial.name}</p>
           <p className="text-sm text-right font-thin mt-2">{currentTestimonial.designation},</p>
@@ -57,7 +57,7 @@ const TestimonialsPage = () => {
         </div>
         <button
           onClick={nextTestimonial}
-          className="text-3xl font-bold focus:outline-none text-white  hover:text-gray-800 hover:bg-white rounded-full p-2 text-center  m-2"
+          className="text-3xl font-bold focus:outline-none text-white  hover:text-gray-800 hover:bg-white rounded-full p-2 text-center m-2"
         >
           &gt;
         </button>

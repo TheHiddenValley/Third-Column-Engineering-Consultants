@@ -45,7 +45,6 @@ const Portfolio = () => {
       <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-60 text-white opacity-0 hover:opacity-100 hover:rounded-3xl transition-opacity cursor-pointer">
         <div className="text-center" onClick={() => handleProjectClick(project)}>
           <h1 className="text-xl font-bold">{project.title}</h1>
-          <p>{project.year}</p>
         </div>
       </div>
     </div>
