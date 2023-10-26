@@ -73,11 +73,11 @@ const Hero = () => {
     </svg>
             </div>
           </nav>
-          <div className="relative h-full bg-black bg-opacity-100">
+          <div className="relative h-4/5 bg-black bg-opacity-100">
             {images.map((image, index) => (
               <div
                 key={index}
-                className={`absolute h-3/4 w-full transition-opacity duration-1000 ${
+                className={`absolute h-screen w-full transition-opacity duration-1000 ${
                   index === currentImageIndex ? 'opacity-90' : 'opacity-0'
                 }`}
               >

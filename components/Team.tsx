@@ -6,19 +6,19 @@ const members = [
     {
         name: 'Gunduz Eronat',
         image: '/founder1.jpeg', 
-        post: 'Founder',
+        post: 'Honorary President',
         linkedin: 'https://www.linkedin.com/in/gunduz-eronat-15b2a635/',
       },
       {
         name: 'Hari Anandan',
         image: '/founder1.jpeg', 
-        post: 'Founder',
+        post: 'Managing Director',
         linkedin: 'https://www.linkedin.com/in/hari-anandan-31697516/',
       },
       {
         name: 'Jayadev Edakkandy',
         image: '/founder1.jpeg', 
-        post: 'Founder',
+        post: 'Director - Principal Architect',
         linkedin: 'https://www.linkedin.com/in/jayadev-edakkandy-7a67951b/',
       },
       

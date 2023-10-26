@@ -36,7 +36,7 @@ const Portfolio = () => {
       </div>
       <div className="grid grid-cols-3 gap-4">
   {filteredProjects.map((project, index) => (
-    <div key={index} className="relative h-96"> {/* Set a fixed height */}
+    <div key={index} className="relative h-50"> {/* Set a fixed height */}
       <img
         src={project.image}
         alt={project.title}
