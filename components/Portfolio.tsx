@@ -1,6 +1,8 @@
 "use client"
 import React from 'react'
+import BackButton from './BackButton';
 import { useState } from 'react';
+
 import PortfolioData, {Project} from './PortfolioData';
 
 const Portfolio = () => {
@@ -21,6 +23,9 @@ const Portfolio = () => {
   const filteredProjects = selectedCategory === 'All' ? PortfolioData : PortfolioData.filter(project => project.category === selectedCategory);
   return (
     <section id='portfolio' className='bg-gray-800  p-10 h-3/4'>
+        <div className='text-right z-50'>
+          <BackButton />
+        </div>
         <h1 className='text-3xl font-helvetica-neue tracking-wider font-light pb-2 text-white'>PORTFOLIO</h1>
         <p className='opacity-60 text-white pb-2'>Our Work</p>
         <div className="flex overflow-x-auto scrollbar-hide space-x-4 mb-4 ">
@@ -49,6 +54,7 @@ const Portfolio = () => {
       </div>
     </div>
   ))}
+  
 </div>
 
 {selectedProject && (
@@ -62,13 +68,13 @@ const Portfolio = () => {
         style={{ maxHeight: '80vh' }} // Set a max height relative to the viewport height
       />
       {/* <p>{selectedProject.description}</p> */}
-      <button className="bg-red-500 text-white px-2 py-1 rounded-md" onClick={closeModal}>
+      <button className="bg-red-500 text-white px-2 py-1 rounded-md mt-2" onClick={closeModal}>
         Close
       </button>
     </div>
   </div>
 )}
-
+      
     </section>
   )
 }

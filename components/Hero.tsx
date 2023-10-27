@@ -11,12 +11,40 @@ import Image from 'next/image';
 
 const images = [
   {
-    src: '/04-UAQ-01.jpg',
-    caption: 'CAPTION ONE, UMM Al QUWAIN',
+    src: '/01-Buds-01.jpg',
+    caption: 'Buds School, Dubai',
   },
   {
-    src: '/hero1.png',
-    caption: 'CAPTION TWO, SHARJAH',
+    src: '/01-Golf academy-01.jpg',
+    caption: 'Golf Academy',
+  },
+  {
+    src: '/03-faiz-01.jpg',
+    caption: 'Faiz',
+  },
+  {
+    src: '/03-UAQ-Shopping-03.jpg',
+    caption: 'UAQ Shopping, Umm Al Quwain',
+  },
+  {
+    src: '/04-Jabal-Ali-Office-01.jpg',
+    caption: 'Jabal Ali Office, Dubai',
+  },
+  {
+    src: '/04-mombasa-01.jpg',
+    caption: 'Kilua, Mombasa',
+  },
+  {
+    src: '/10-VAM Drillingi-01.jpg',
+    caption: 'VAM Drillingi',
+  },
+  {
+    src: '/13-sam-01.jpg',
+    caption: 'Sam',
+  },
+  {
+    src: '/06-mombasa-03.jpg',
+    caption: 'Kilua, Mombasa',
   },
   // Add more images and captions here
 ];
@@ -48,37 +76,40 @@ const Hero = () => {
     return () => clearInterval(interval);
   }, []);
 
+
+
   return (
     <div>
       {!loadingComplete ? (
         <LoadingScreen onLoad={handleLoadComplete} />
       ) : (
-        <section className="relative h-screen">
-          <nav className="absolute top-0 left-0 z-10 flex justify-between items-center p-6 w-full bg-opacity-60 text-white bg-black">
-            <h1 className="text-5xl font-bold">3rd Column</h1>
-            <div className="cursor-pointer" onClick={toggleMenu}>
-            <svg
-      xmlns="http://www.w3.org/2000/svg"
-      className="h-10 w-10"
-      fill="none"
-      viewBox="0 0 24 24"
-      stroke="currentColor"
-    >
-      <path
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth={2}
-        d="M4 6h16M4 12h16m-7 6h7"
-      />
-    </svg>
-            </div>
-          </nav>
-          <div className="relative h-4/5 bg-black bg-opacity-100">
+        <section className="relative bg-slate-100">
+    <nav className={`flex justify-between items-center p-6 bg-gray-800 text-white fixed top-0 left-0 right-0 z-20 ${isMenuOpen ? 'bg-opacity-90' : ''}`}>
+      <h1 className="text-5xl font-light">3rd Column</h1>
+      <div className="cursor-pointer z-10" onClick={toggleMenu}>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="h-10 w-10"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M4 6h16M4 12h16m-7 6h7"
+          />
+        </svg>
+      </div>
+    </nav>
+
+          <div className="relative h-3/4 bg-opacity-100">
             {images.map((image, index) => (
               <div
                 key={index}
-                className={`absolute h-screen w-full transition-opacity duration-1000 ${
-                  index === currentImageIndex ? 'opacity-90' : 'opacity-0'
+                className={`h-3/4 w-full transition-opacity duration-1000 ${
+                  index === currentImageIndex ? 'opacity-100' : 'opacity-0'
                 }`}
               >
                 <Image
@@ -87,13 +118,15 @@ const Hero = () => {
                   layout="fill"
                   objectFit="cover"
                 />
-                <div className="absolute inset-x-0 bottom-0 text-center  w-full ">
+                
+                {/* <div className="absolute inset-x-0 bottom-0 text-center  w-full ">
                   <h1 className=' text-3xl font-helvetica-neue tracking-wider font-semibold p-4 text-white'>{image.caption}</h1>
                   
-                </div>
-                <p className='text-white'>This is some text below the image.</p>
+                </div> */}
               </div>
+              
             ))}
+            
           </div>
           <Menu isMenuOpen={isMenuOpen} onCloseMenu={handleCloseMenu} />
         </section>

@@ -28,7 +28,7 @@ const ContactUs = () => {
 
 
   return (
-    <section id="contact" className="bg-white p-8 h-auto flex flex-col md:flex-row items-center justify-center">
+    <section id="contact" className="bg-gray-200 p-8 h-screen flex flex-col md:flex-row items-center justify-center">
       <div className="md:w-1/2 p-8">
         <h2 className="text-3xl text-gray-800 font-semibold mb-4 font-helvetica-neue tracking-wider">
           CONTACT US
@@ -40,8 +40,6 @@ const ContactUs = () => {
           <p className="text-base md:text-lg">P.O.Box 114093, Dubai</p>
           <p className="text-base md:text-lg">U.A.E</p>
         </div>
-      </div>
-      <div className="md:w-1/2 p-8">
         <div className="flex flex-col text-gray-700">
           <p className="text-base md:text-lg">
             <span className='text-orange-400'>E-mail:</span> info@tceconsultants.ae
@@ -52,7 +50,13 @@ const ContactUs = () => {
           <p className="text-base md:text-lg">
             <span className='text-orange-400'>Fax:</span> +971 4 257 3279
           </p>
+          <p className="text-base md:text-lg">
+            <span className='text-orange-400'>Mobile no.:</span> +971 50 4502429 / +971 50 4950148
+          </p>
         </div>
+      </div>
+      <div className="md:w-1/2 p-8">
+        <img className='rounded-lg' src="/04-mombasa-01.jpg" alt="" />
       </div>
       {/* <div className="md:w-1/2 p-8">
         <h3 className="text-xl md:text-2xl text-gray-800 mb-4 font-semibold">
