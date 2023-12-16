@@ -30,7 +30,7 @@ const About = () => {
               WHO ARE WE?
             </h1>
             <p className='pl-4'>
-                3rd Column Engineering Consultants is an Architectural & Engineering practice based in Dubai, the commercial capital of the Middle East. We are an integrated, single source design firm with shared experience and expertise of a bunch of creative designers, logical thinkers and dedicated professionals. We offer Architectural, Engineering and Urban Planning services to a diverse base of national & international clients. We offer to our client a diverse range of services integrating services from many operating systems to provide highly innovative solutions.
+                3rd Column Engineering Consultants is an Architectural & Engineering practice based in Dubai, the commercial capital of the Middle East. We are an integrated, single source design firm with shared experience and expertise of a bunch of creative designers, logical thinkers and dedicated professionals. We offer Architectural, Engineering and Urban Planning services to a diverse base of national & international clients provide them a diverse range of services integrating services from many operating systems to provide highly innovative solutions.
             </p>
           </div>
           <div className="text-center md:w-1/2 md:text-left">
