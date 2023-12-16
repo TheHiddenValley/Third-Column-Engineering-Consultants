@@ -22,7 +22,7 @@ const Menu = ({ isMenuOpen, onCloseMenu }: MenuProps) => {
         {isMenuOpen && (
           <button
             onClick={onCloseMenu}
-            className="text-white text-3xl py-2 mt-4 hover:text-black hover:bg-amber-200 hover:p-4 hover:rounded-full  transition duration-300"
+            className="bg-amber-200 text-3xl py-2 mt-4 text-black p-4 rounded-full  hover:bg-white transition duration-300"
           >
             x
           </button>

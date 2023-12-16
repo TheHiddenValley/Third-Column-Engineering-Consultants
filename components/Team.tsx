@@ -33,7 +33,6 @@ const Team = () => {
       <h1 className="text-center text-3xl font-helvetica-neue tracking-wider font-light py-4 text-gray-800">
         THE TEAM
       </h1>
-      <p className='text-center opacity-60'>Our architects</p>
       <div className="flex flex-wrap justify-center">
         {members.map((member, index) => (
           <Member

@@ -15,7 +15,7 @@ const Member = ({ name, image, line, post, linkedin }: Member) => {
     <div className="w-1/2 md:w-1/3 p-4">
       <div className="bg-gray-100 p-6 rounded-2xl shadow-md hover:shadow-lg transition duration-300 transform hover:-translate-y-1 hover:scale-105">
         <div className="flex justify-center">
-          <img src={image} alt={name} className="rounded-full h-32 w-32 mb-4 outline" />
+          <img src={image} alt={name} className="rounded-full h-32 w-27 mb-4 " />
         </div>
         <h1 className="text-center text-black font-semibold mt-4">{name}</h1>
         <p className="text-center text-gray-600 font-light mt-2">{line}</p>
