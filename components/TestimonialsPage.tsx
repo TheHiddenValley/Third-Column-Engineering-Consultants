@@ -50,7 +50,7 @@ const TestimonialsPage = () => {
           &lt;
         </button>
         <div className="max-w-[95vw] text-3xl font-serif p-6 text-white rounded-lg">
-          <p>"{currentTestimonial.quote}"</p>
+          <p>&ldquo;{currentTestimonial.quote}&rdquo;</p>
           <p className="text-xl text-right font-thin mt-2">-{currentTestimonial.name}</p>
           <p className="text-lg text-right font-thin mt-2">{currentTestimonial.designation},</p>
           <p className="text-lg text-right font-thin">{currentTestimonial.company}</p>

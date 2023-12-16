@@ -23,7 +23,7 @@ const LoadingScreen = ({ onLoad }: LoadingScreenProps) => {
     >
     
       <p className="text-right text-4xl font-semibold">
-        "We borrow from nature, the space  ....upon which we build"
+        &ldquo;We borrow from nature, the space  ....upon which we build&rdquo;
       </p>
       <p className='text-right mr-4 text-amber-200 text-2xl pt-5'>-Tadao Ando</p>
     </div>
