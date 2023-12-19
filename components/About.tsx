@@ -17,29 +17,29 @@ const services = [
 
 const About = () => {
   return (
-<section id="about" className='bg-slate-100 h-auto sm:pt-20'>
+<section id="about" className='bg-slate-100 h-auto sm:pt-20 flex flex-col'>
   <div className="pb-12 md:pt-16 md:pb-48">
-    <h1 className="text-center text-gray-800 font-helvetica-neue tracking-wider font-light text-4xl">
+    <h1 className="text-center text-gray-800 font-helvetica-neue tracking-wider font-light text-4xl mt-8">
       ABOUT
       <hr className="w-8 h-1 mx-auto my-4 bg-gray-800 border-0 rounded"></hr>
     </h1>
 
     <div className="flex flex-col space-y-10 items-center md:space-x-10 md:space-y-0 md:p-4 md:flex-row md:text-left">
-      <div className="md:w-1/2">
-        <h1 className="text-center text-gray-800 font-helvetica-neue tracking-wider font-light text-2xl mb-6 md:text-left md:pl-4">
+      <div className="md:w-full">
+        <h1 className="text-center text-gray-800 font-helvetica-neue tracking-wider font-light text-2xl mb-6 md:text-left md:pl-4 mt-8">
           WHO ARE WE?
         </h1>
         <p className='text-gray-700 text-lg pl-4 leading-7'>
           3rd Column Engineering Consultants is an innovative Architectural & Engineering practice based in Dubai, the commercial capital of the Middle East. We bring together a team of creative designers, logical thinkers, and dedicated professionals to deliver integrated design solutions. Specializing in Architectural, Engineering, and Urban Planning services, we seamlessly integrate solutions from various operating systems to provide unique and customized solutions that meet the diverse needs of our clients.
         </p>
       </div>
-      <div className="text-center md:w-1/2 md:text-left">
-        <h1 className="text-gray-800 font-helvetica-neue tracking-wider font-light text-2xl mb-6">OUR SERVICES</h1>
+      <div className="md:w-full mt-8 md:mt-0">
+        <h1 className="text-center md:text-left text-gray-800 font-helvetica-neue tracking-wider font-light text-2xl mb-6 mt-8">OUR SERVICES</h1>
         <div className="flex flex-wrap justify-center z-10 md:justify-start">
           {services.map((item, idx) => (
             <p
               key={idx}
-              className="bg-gray-800 px-6 py-3 mr-3 mt-3 text-slate-100 rounded-full font-semibold hover:bg-gray-600 hover:text-white transition duration-300"
+              className="bg-gray-800 px-6 py-3 mb-3 mr-3 md:mt-0 text-slate-100 rounded-full font-semibold hover:bg-gray-600 hover:text-white transition duration-300"
             >
               {item.service}
             </p>
@@ -48,7 +48,10 @@ const About = () => {
       </div>
     </div>
   </div>
+  <div className="base-color h-16 bg-gray-800 md:hidden"></div>
 </section>
+
+
 
 //     <section id="about" className='bg-slate-100 h-100'>
 //     <div className="pb-12 md:pt-6 md:pb-40">
