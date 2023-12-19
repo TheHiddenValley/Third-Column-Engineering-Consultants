@@ -48,6 +48,7 @@ const About = () => {
       </div>
     </div>
   </div>
+  
   <div className="base-color h-16 bg-gray-800 md:hidden"></div>
 </section>
 

@@ -27,13 +27,17 @@ const Portfolio = () => {
 
   return (
     <div className='overflow-y-auto h-screen md:h-auto'>
+      
+
     <section id='portfolio' className='bg-gray-800 p-4 md:p-10 h-auto'>
+    
       <div className='text-right md:pt-2 z-50'>
         <BackButton />
       </div>
       <h1 className='text-2xl md:text-3xl font-helvetica-neue tracking-wider font-light pb-2 text-white'>
         PORTFOLIO
       </h1>
+      <div className="border-b border-gray-600 mb-4"></div>
       <p className='text-sm md:text-base opacity-60 text-white pb-2'>Our Work</p>
       <div className='flex overflow-x-auto scrollbar-hide space-x-2 md:space-x-4 mb-4 flex-nowrap'>
         <button
@@ -121,6 +125,7 @@ const Portfolio = () => {
           </div>
         </div>
       )}
+      
     </section>
   </div>
     // <div className='overflow-y-auto h-screen md:h-auto'>
