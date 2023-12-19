@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaEnvelope } from 'react-icons/fa';
 
 const ContactUs = () => {
     // add google sheets integration
@@ -41,8 +42,11 @@ const ContactUs = () => {
           <p className="text-base md:text-lg">U.A.E</p>
         </div>
         <div className="flex flex-col text-gray-700">
-          <p className="text-base md:text-lg">
-            <span className='text-orange-400'>E-mail:</span> info@tceconsultants.ae
+        <p className="text-base md:text-lg flex">
+            <span className='text-orange-400'>E-mail: </span> 
+            <a href="mailto:info@tceconsultants.ae" className="flex items-center text-base md:text-lg hover:text-blue-700">
+              <FaEnvelope className="mr-1 ml-1" /> info@tceconsultants.ae
+            </a>
           </p>
           <p className="text-base md:text-lg">
             <span className='text-orange-400'>Tel:</span> +971 4 257 3222

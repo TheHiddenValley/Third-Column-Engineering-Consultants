@@ -45,7 +45,7 @@ const TestimonialsPage = () => {
       <div className="flex items-center mb-4 relative md:flex-row">
         <button
           onClick={prevTestimonial}
-          className="text-3xl font-bold focus:outline-none text-white hover:text-gray-800 hover:bg-white rounded-full p-2 text-center m-2"
+          className="text-3xl font-bold focus:outline-none text-gray-800 bg-white rounded-full p-2 text-center m-2"
         >
           &lt;
         </button>
@@ -57,7 +57,7 @@ const TestimonialsPage = () => {
         </div>
         <button
           onClick={nextTestimonial}
-          className="text-3xl font-bold focus:outline-none text-white  hover:text-gray-800 hover:bg-white rounded-full p-2 text-center m-2"
+          className="text-3xl font-bold focus:outline-none text-gray-800 bg-white  rounded-full p-2 text-center m-2"
         >
           &gt;
         </button>
