@@ -10,7 +10,7 @@ import ContactUs from '@/components/ContactUs'
 
 export default function Home() {
   return (
-    <main className="overflow-hidden">
+    <main className="overflow-hidde bg-gray-200">
       {/* <Navbar /> */}
       <Hero />
       <About />
