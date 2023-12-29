@@ -39,10 +39,10 @@ const ContactUs = () => {
             </div>
           </div>
         </div>
-        <div className="md:w-1/2 p-10">
+        <div className="md:w-1/2 md:ml-10 p-8">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14431.27820129814!2d55.3853612!3d25.276655!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5dae9275040b%3A0x7766f9f2b659fe78!2s3rd%20Column%20Engineering%20Consultants!5e0!3m2!1sen!2sae!4v1703852380065!5m2!1sen!2sae"
-          width="600"
+          width="510"
           height="350"
           style={{ border: 0 }}
           loading="lazy"
