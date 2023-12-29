@@ -1,4 +1,6 @@
 import React from 'react'
+import { IoIosCloseCircle } from "react-icons/io";
+
 
 interface MenuProps {
     isMenuOpen: boolean;
@@ -22,9 +24,9 @@ const Menu = ({ isMenuOpen, onCloseMenu }: MenuProps) => {
         {isMenuOpen && (
           <button
             onClick={onCloseMenu}
-            className="bg-amber-200 text-3xl py-2 mt-4 text-black p-4 rounded-full  hover:bg-white transition duration-300"
+            className=""
           >
-            x
+            <IoIosCloseCircle className='text-5xl text-white hover:text-amber-200 transition 3s' />
           </button>
         )}
 

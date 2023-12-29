@@ -3,6 +3,7 @@ import React from 'react';
 import BackButton from './BackButton';
 import { useState } from 'react';
 import PortfolioData, { Project } from './PortfolioData';
+import { FaFolderOpen } from "react-icons/fa";
 
 const Portfolio = () => {
   const [selectedCategory, setSelectedCategory] = useState('All');
@@ -34,8 +35,8 @@ const Portfolio = () => {
       <div className='text-right md:pt-2 z-50'>
         <BackButton />
       </div>
-      <h1 className='text-2xl md:text-3xl font-helvetica-neue tracking-wider font-light pb-2 text-white'>
-        PORTFOLIO
+      <h1 className='flex text-2xl md:text-3xl font-helvetica-neue tracking-wider font-light pb-2 text-white'>
+        <FaFolderOpen className='mr-2' /> PORTFOLIO
       </h1>
       <div className="border-b border-gray-600 mb-4"></div>
       <p className='text-sm md:text-base opacity-60 text-white pb-2'>Our Work</p>
