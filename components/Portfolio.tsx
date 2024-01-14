@@ -140,7 +140,7 @@ const Portfolio = () => {
         <div className='fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-80'>
           <div className='bg-white p-4 rounded-lg w-full md:w-1/2' style={{ height: modalHeight }}>
             <h1 className='text-base md:text-xl font-bold'>{selectedProject.title}</h1>
-            <img className='rounded-lg w-full h-5/6' src={selectedProject.image} alt='' />
+            <img className='rounded-xl w-full h-5/6 p-2' src={selectedProject.image} alt='' />
             <button
                className='bg-red-500 text-white px-2 py-1 rounded-md mt-2'
                onClick={closeModal}
