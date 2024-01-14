@@ -21,6 +21,30 @@ const Portfolio = () => {
     setSelectedProject(null);
   };
 
+  const calculateModalHeight = () => {
+    if (selectedProject) {
+      const image = new Image();
+      image.src = selectedProject.image;
+
+      // Adjust the modal height based on image orientation
+      const aspectRatio = image.width / image.height;
+      const maxWidth = window.innerWidth * 0.8; // Adjust as needed
+      const maxHeight = window.innerHeight * 0.8; // Adjust as needed
+
+      if (aspectRatio > 1) {
+        // Horizontal image
+        return Math.min(maxHeight, window.innerHeight * 0.8);
+      } else {
+        // Vertical image
+        return Math.min(maxHeight, maxWidth / aspectRatio);
+      }
+    }
+
+    return 'auto'; // Default value
+  };
+
+  const modalHeight = calculateModalHeight();
+
   const filteredProjects =
     selectedCategory === 'All'
       ? PortfolioData
@@ -112,16 +136,16 @@ const Portfolio = () => {
             </div>
           ))}
         </div>
-      {selectedProject && (
+        {selectedProject && (
         <div className='fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-80'>
-          <div className='bg-white p-4 rounded-lg w-full md:w-1/2'>
+          <div className='bg-white p-4 rounded-lg w-full md:w-1/2' style={{ height: modalHeight }}>
             <h1 className='text-base md:text-xl font-bold'>{selectedProject.title}</h1>
-            <img className='rounded-lg w-full' src={selectedProject.image} alt='' />
+            <img className='rounded-lg w-full h-5/6' src={selectedProject.image} alt='' />
             <button
                className='bg-red-500 text-white px-2 py-1 rounded-md mt-2'
                onClick={closeModal}
             >
-                 Close
+              Close
             </button>
           </div>
         </div>
