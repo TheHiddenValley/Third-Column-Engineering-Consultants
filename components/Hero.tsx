@@ -12,7 +12,7 @@ import Image from 'next/image';
 const images = [
   {
     src: '/01-Buds-01.jpg',
-    caption: 'Buds School, Dubai',
+    caption: 'Buds School, Singapore',
   },
   {
     src: '/01-Golf academy-01.jpg',
@@ -28,7 +28,7 @@ const images = [
   },
   {
     src: '/04-Jabal-Ali-Office-01.jpg',
-    caption: 'Jabal Ali Office, Dubai',
+    caption: 'Jabal Ali Office, Singapore',
   },
   {
     src: '/04-mombasa-01.jpg',
@@ -85,7 +85,7 @@ const Hero = () => {
       ) : (
         <section className="relative bg-slate-100">
     <nav className={`flex justify-between items-center p-6 bg-gray-800 text-white fixed top-0 left-0 right-0 z-20 ${isMenuOpen ? 'bg-opacity-90' : ''}`}>
-      <h1 className="text-5xl font-light">3rd Column</h1>
+      <h1 className="text-5xl font-light">Laava Events and Facility Consulting</h1>
       <div className="cursor-pointer z-10" onClick={toggleMenu}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
