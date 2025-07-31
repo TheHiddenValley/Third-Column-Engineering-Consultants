@@ -15,7 +15,7 @@ const Navbar = () => {
   return (
     <div>
     <nav className="flex justify-between items-center p-4 ">
-      <h1 className="text-xl font-bold">Third Column</h1>
+      <h1 className="text-xl font-bold">Laava Events and Facility Consulting</h1>
       <div className="cursor-pointer">
         <svg
           xmlns="http://www.w3.org/2000/svg"
